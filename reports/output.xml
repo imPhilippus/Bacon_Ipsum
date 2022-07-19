@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.5 on linux)" generated="20220718 21:56:18.308" rpa="false" schemaversion="3">
+<suite id="s1" name="Bacon Ipsum Tests" source="/home/Phil/Bacon_Ipsum/tests/bacon_ipsum_tests.robot">
+<test id="s1-t1" name=" Scenario 01: minimum paragraphs / start with bacon ipsum" line="13">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 21:56:19.344" level="INFO">Opening browser 'firefox' to base url 'http://baconipsum.com'.</msg>
+<msg timestamp="20220718 21:56:19.347" level="INFO">Firefox driver log is always forced to to: /home/Phil/Bacon_Ipsum/reports/geckodriver-80.log</msg>
+<status status="PASS" starttime="20220718 21:56:19.343" endtime="20220718 21:57:30.625"/>
+</kw>
+<kw name="Leave Paragraph Input Empty" library="bacon_ipsum">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PARAGRAPH_TEXT_FIELD}</arg>
+<arg>0</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220718 21:57:30.641" level="INFO">Typing text '0' into text field 'name=paras'.</msg>
+<msg timestamp="20220718 21:57:31.096" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-42.png"&gt;&lt;img src="selenium-screenshot-42.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220718 21:57:31.100" level="FAIL">Element with locator 'name=paras' not found.</msg>
+<status status="FAIL" starttime="20220718 21:57:30.630" endtime="20220718 21:57:31.150"/>
+</kw>
+<status status="FAIL" starttime="20220718 21:57:30.629" endtime="20220718 21:57:31.153"/>
+</kw>
+<kw name="Select 'Meat and Filler' Option" library="bacon_ipsum">
+<status status="NOT RUN" starttime="20220718 21:57:31.155" endtime="20220718 21:57:31.156"/>
+</kw>
+<kw name="Unselect Start With Bacon Ipsum" library="bacon_ipsum">
+<status status="NOT RUN" starttime="20220718 21:57:31.159" endtime="20220718 21:57:31.160"/>
+</kw>
+<kw name="Submit" library="bacon_ipsum">
+<status status="NOT RUN" starttime="20220718 21:57:31.163" endtime="20220718 21:57:31.165"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${PARAGRAPH_CONTAINER}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20220718 21:57:31.168" endtime="20220718 21:57:31.168"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 21:57:31.172" endtime="20220718 21:57:32.699"/>
+</kw>
+<tag>Minimum_Paras</tag>
+<status status="FAIL" starttime="20220718 21:56:19.340" endtime="20220718 21:57:32.700">Element with locator 'name=paras' not found.</status>
+</test>
+<test id="s1-t2" name=" Scenario 02: maximum paragraphs" line="26">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 21:57:32.708" level="INFO">Opening browser 'firefox' to base url 'http://baconipsum.com'.</msg>
+<msg timestamp="20220718 21:57:32.713" level="INFO">Firefox driver log is always forced to to: /home/Phil/Bacon_Ipsum/reports/geckodriver-81.log</msg>
+<status status="PASS" starttime="20220718 21:57:32.707" endtime="20220718 21:58:44.006"/>
+</kw>
+<kw name="Input 99 Paragraphs" library="bacon_ipsum">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PARAGRAPH_TEXT_FIELD}</arg>
+<arg>99</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220718 21:58:44.016" level="INFO">Typing text '99' into text field 'name=paras'.</msg>
+<msg timestamp="20220718 21:58:44.429" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-43.png"&gt;&lt;img src="selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220718 21:58:44.434" level="FAIL">Element with locator 'name=paras' not found.</msg>
+<status status="FAIL" starttime="20220718 21:58:44.015" endtime="20220718 21:58:44.435"/>
+</kw>
+<status status="FAIL" starttime="20220718 21:58:44.009" endtime="20220718 21:58:44.440"/>
+</kw>
+<kw name="Submit" library="bacon_ipsum">
+<status status="NOT RUN" starttime="20220718 21:58:44.442" endtime="20220718 21:58:44.442"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//p[99]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20220718 21:58:44.442" endtime="20220718 21:58:44.443"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 21:58:44.444" endtime="20220718 21:58:46.495"/>
+</kw>
+<tag>99</tag>
+<status status="FAIL" starttime="20220718 21:57:32.703" endtime="20220718 21:58:46.496">Element with locator 'name=paras' not found.</status>
+</test>
+<test id="s1-t3" name=" Scenario 03: 20 paragraph / make it spicy" line="35">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220718 21:58:46.501" level="INFO">Opening browser 'firefox' to base url 'http://baconipsum.com'.</msg>
+<msg timestamp="20220718 21:58:46.503" level="INFO">Firefox driver log is always forced to to: /home/Phil/Bacon_Ipsum/reports/geckodriver-82.log</msg>
+<status status="PASS" starttime="20220718 21:58:46.499" endtime="20220718 21:59:56.355"/>
+</kw>
+<kw name="Input 20 Paragraphs" library="bacon_ipsum">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PARAGRAPH_TEXT_FIELD}</arg>
+<arg>20</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220718 21:59:56.374" level="INFO">Typing text '20' into text field 'name=paras'.</msg>
+<msg timestamp="20220718 21:59:56.690" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220718 21:59:56.692" level="FAIL">Element with locator 'name=paras' not found.</msg>
+<status status="FAIL" starttime="20220718 21:59:56.371" endtime="20220718 21:59:56.693"/>
+</kw>
+<status status="FAIL" starttime="20220718 21:59:56.365" endtime="20220718 21:59:56.695"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>${START_W_LOREM_CHECKBOX}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" starttime="20220718 21:59:56.696" endtime="20220718 21:59:56.696"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${SPICY_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220718 21:59:56.711" endtime="20220718 21:59:56.711"/>
+</kw>
+<kw name="Submit" library="bacon_ipsum">
+<status status="NOT RUN" starttime="20220718 21:59:56.715" endtime="20220718 21:59:56.715"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Spicy jalapeno bacon ipsum dolor amet</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220718 21:59:56.716" endtime="20220718 21:59:56.716"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220718 21:59:56.725" endtime="20220718 21:59:58.834"/>
+</kw>
+<tag>spicy_20</tag>
+<status status="FAIL" starttime="20220718 21:58:46.498" endtime="20220718 21:59:58.838">Element with locator 'name=paras' not found.</status>
+</test>
+<status status="FAIL" starttime="20220718 21:56:18.310" endtime="20220718 21:59:58.845"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">99</stat>
+<stat pass="0" fail="1" skip="0">Minimum_Paras</stat>
+<stat pass="0" fail="1" skip="0">spicy_20</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Bacon Ipsum Tests">Bacon Ipsum Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

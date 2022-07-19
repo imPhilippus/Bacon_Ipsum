@@ -1,0 +1,27 @@
+1657835049573	geckodriver	INFO	Listening on 127.0.0.1:44405
+1657835056544	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52073" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileykzwye"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+libva info: VA-API version 1.13.0
+libva info: Trying to open /usr/lib64/dri/iHD_drv_video.so
+libva info: va_openDriver() returns -1
+libva info: Trying to open /usr/lib64/dri/i965_drv_video.so
+libva info: va_openDriver() returns -1
+1657835077300	Marionette	INFO	Marionette enabled
+1657835077315	Marionette	INFO	Listening on port 42205
+WebDriver BiDi listening on ws://localhost:52073
+Read port: 42205
+Read port: 42205
+Read port: 42205
+Read port: 42205
+1657835081797	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileykzwye/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:52073/devtools/browser/2e713840-777f-4d4a-962a-4f866e286553
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://baconipsum.com"
+1657835154544	Marionette	INFO	Stopped listening on port 42205
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
