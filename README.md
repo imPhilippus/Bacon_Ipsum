@@ -1,6 +1,6 @@
-### Bacon Ipsum Tests
-# Tests in website
-## Description
+# Bacon Ipsum Tests
+## Tests in website
+### Description
 
 This is a test case for the mainly functions of a loren ipsum generator website
 
